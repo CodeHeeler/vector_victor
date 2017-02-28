@@ -4,10 +4,6 @@ class ShapeError(Exception):
 
 def shape(thing):
     n = len(thing)
-    #if type(thing[0]) == list:
-    #    k = len(thing[0])
-    #    return (n,k)
-    #else:
     return (n,)
 
 
@@ -44,9 +40,9 @@ def vector_multiply(v, num):
     return [a * num for a in v]
 
 
-def vector_mean():
-    pass
+def vector_mean(*args):
+    return [sum(stuff) / len(stuff) for stuff in zip(*args)]
 
 
-def magnitude():
-    pass
+def magnitude(v):
+    return (sum([a * a for a in v]))**(1/2)
