@@ -138,16 +138,16 @@ D = [[1, 2, 3],
 
 # ADVANCED MODE TESTS BELOW
 # UNCOMMENT THEM FOR ADVANCED MODE!
-#
-# def test_shape_matrices():
-#     """shape takes a vector or matrix and return a tuple with the
-#     number of rows (for a vector) or the number of rows and columns
-#     (for a matrix.)"""
-#     assert shape(A) == (3, 3)
-#     assert shape(C) == (3, 2)
-#     assert shape(D) == (2, 3)
-#
-#
+
+def test_shape_matrices():
+    """shape takes a vector or matrix and return a tuple with the
+    number of rows (for a vector) or the number of rows and columns
+    (for a matrix.)"""
+    assert shape(A) == (3, 3)
+    assert shape(C) == (3, 2)
+    assert shape(D) == (2, 3)
+
+
 # def test_matrix_row():
 #     """
 #            0 1  <- rows

@@ -4,7 +4,10 @@ class ShapeError(Exception):
 
 def shape(thing):
     n = len(thing)
-    return (n,)
+    if type(thing[0]) == list:
+        return (n, len(thing[0]))
+    else:
+        return (n,)
 
 
 def vector_add(v1, v2):
